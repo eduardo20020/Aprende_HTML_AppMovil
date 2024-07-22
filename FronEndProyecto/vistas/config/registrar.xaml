@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FronEndProyecto.vistas.config.registrar">
+
+    <Grid>
+        <!-- Imagen de fondo -->
+        <Image Source="https://apibrandon.eastus.cloudapp.azure.com/img/orange-gradient.jpg"
+               Aspect="AspectFill"
+               Opacity="0.8" 
+               Grid.RowSpan="2" />
+
+        <ScrollView>
+            <!-- Contenido sobre la imagen -->
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Regístrate aquí" 
+                       TextColor="White" 
+                       FontSize="Title" 
+                       HorizontalOptions="Center" />
+
+                <Label Text="Dame tu nombre: " />
+                <Entry x:Name="nombreDos" />
+
+                <Label Text="Dame tu correo: " />
+                <Entry x:Name="correoDos" />
+
+                <Label Text="Dame tu contraseña: " />
+                <Entry x:Name="contraDos" IsPassword="True" />
+
+
+
+
+                <StackLayout>
+                    <Label x:Name="reponseDos" Text="juan" TextColor="White" />
+                </StackLayout>
+
+
+
+                <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="Center">
+                    <Button Text="Registrar"
+                            TextColor="White"
+                            FontSize="Title"
+                            BackgroundColor="Transparent"
+                            BorderColor="White"
+                            HorizontalOptions="Center"
+                            WidthRequest="200"
+                            HeightRequest="50"
+                            Clicked="postRegistrar"/>
+
+                    <Image Source="https://apibrandon.eastus.cloudapp.azure.com/img/flecha-correctaDos.png"
+                           MinimumHeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="postRegistrar" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
