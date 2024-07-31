@@ -57,5 +57,9 @@ namespace FronEndProyecto.vistas
 
         }
 
+        private void cambiarCuenta(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new login());
+        }
     }
 }
