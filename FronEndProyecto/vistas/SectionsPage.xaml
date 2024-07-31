@@ -4,6 +4,7 @@
              x:Class="FronEndProyecto.vistas.SectionsPage"
              BackgroundImageSource="https://i.pinimg.com/736x/46/c9/21/46c921ba69d71bb284cfc5e2e6a2f4a9.jpg">
     <ContentPage.Content>
+<<<<<<< HEAD
         <StackLayout Padding="20" Spacing="20">
             <!-- Título de la página -->
             <Label 
@@ -150,5 +151,237 @@
                 </StackLayout>
             </StackLayout>
         </StackLayout>
+=======
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Elige una sección" TextColor="white" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="0" Grid.ColumnSpan="2" />
+            <Button Text="cambiar de cuneta"  Grid.Row="1" Grid.Column="0"/>
+
+            <!-- Sección 1 -->
+            <StackLayout Margin="5" HeightRequest="40" Grid.Row="2" Grid.Column="0">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text=" Introducción a HTML"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 2 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="2" Grid.Column="1">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="Etiquetas y Elementos Básicos"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion2" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 3 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="3" Grid.Column="0">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="Imágenes y Multimedia"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion3" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 4 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="3" Grid.Column="1">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="Listas y Tablas"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion4" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 5 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="4" Grid.Column="0">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="Formularios Básicos"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 6 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="4" Grid.Column="1">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="Estilos Básicos con CSS"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 7 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="5" Grid.Column="0">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="Layout y Posicionamiento"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 8 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="5" Grid.Column="1">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text="HTML Semántico"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 9 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="6" Grid.Column="0">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text=" Accesibilidad en HTML"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sección 10 -->
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="6" Grid.Column="1">
+                <Frame Padding="10"
+                       HasShadow="True"
+                       BackgroundColor="PowderBlue"
+                       BorderColor="LightGray"
+                       CornerRadius="100"
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                    <Label Text=" Validación y Buenas Prácticas"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="seccion1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </StackLayout>
+
+        </Grid>
+>>>>>>> 28e14e7acea1babbd825abff7cbd94ef8881124f
     </ContentPage.Content>
 </ContentPage>
