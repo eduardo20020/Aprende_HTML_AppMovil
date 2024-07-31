@@ -18,15 +18,24 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!-- Título de la página -->
-            <Label 
+
+            <StackLayout  Grid.Row="0" Grid.ColumnSpan="2">
+                <!-- Título de la página -->
+                <Label 
+                    x:Name="lblInicio"
                 Text="Elige una sección"
+                    TextColor="White"
                  FontAttributes="Bold"
                    FontSize="30"
                    HorizontalOptions="Center"
                    Margin="0,20,0,20"
-                   Grid.Row="0"
-                   Grid.ColumnSpan="2" />
+                   />
+
+                <Button Text="Cambiar de cuenta" Clicked="cambiarCuenta"/>
+
+            </StackLayout>
+
+
 
             <!-- Sección 1 -->
             <StackLayout Margin="10" Grid.Row="1" Grid.Column="0">

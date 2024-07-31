@@ -40,7 +40,7 @@ namespace FronEndProyecto.vistas.config
 
             try
             {
-                var url = "https://apibrandon.eastus.cloudapp.azure.com/api/registrar.php"; // Reemplaza con tu URL
+                var url = "https://apibrandon.eastus.cloudapp.azure.com/api/registrar.php"; 
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = await client.PostAsync(url, content);
