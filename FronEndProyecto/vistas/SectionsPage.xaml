@@ -8,6 +8,8 @@
         <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -20,9 +22,10 @@
             </Grid.ColumnDefinitions>
 
             <Label Text="Elige una sección" TextColor="white" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center" Margin="0,0,0,20" Grid.Row="0" Grid.ColumnSpan="2" />
+            <Button Text="cambiar de cuneta"  Grid.Row="1" Grid.Column="0"/>
 
             <!-- Sección 1 -->
-            <StackLayout Margin="5" HeightRequest="40" Grid.Row="1" Grid.Column="0">
+            <StackLayout Margin="5" HeightRequest="40" Grid.Row="2" Grid.Column="0">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -43,7 +46,7 @@
             </StackLayout>
 
             <!-- Sección 2 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="1" Grid.Column="1">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="2" Grid.Column="1">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -64,7 +67,7 @@
             </StackLayout>
 
             <!-- Sección 3 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="2" Grid.Column="0">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="3" Grid.Column="0">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -85,7 +88,7 @@
             </StackLayout>
 
             <!-- Sección 4 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="2" Grid.Column="1">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="3" Grid.Column="1">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -106,7 +109,7 @@
             </StackLayout>
 
             <!-- Sección 5 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="3" Grid.Column="0">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="4" Grid.Column="0">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -127,7 +130,7 @@
             </StackLayout>
 
             <!-- Sección 6 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="3" Grid.Column="1">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="4" Grid.Column="1">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -148,7 +151,7 @@
             </StackLayout>
 
             <!-- Sección 7 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="4" Grid.Column="0">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="5" Grid.Column="0">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -169,7 +172,7 @@
             </StackLayout>
 
             <!-- Sección 8 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="4" Grid.Column="1">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="5" Grid.Column="1">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -190,7 +193,7 @@
             </StackLayout>
 
             <!-- Sección 9 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="5" Grid.Column="0">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="6" Grid.Column="0">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
@@ -211,7 +214,7 @@
             </StackLayout>
 
             <!-- Sección 10 -->
-            <StackLayout Margin="5" HeightRequest="80" Grid.Row="5" Grid.Column="1">
+            <StackLayout Margin="5" HeightRequest="80" Grid.Row="6" Grid.Column="1">
                 <Frame Padding="10"
                        HasShadow="True"
                        BackgroundColor="PowderBlue"
