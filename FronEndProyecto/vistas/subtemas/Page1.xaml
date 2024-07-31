@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FronEndProyecto.vistas.subtemas.Page1">
+    <ScrollView>
+        <StackLayout Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Software de Gestión Financiera"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <!-- Concepto -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Concepto"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Herramientas como Microsoft Excel, QuickBooks y software especializado permiten crear, gestionar y controlar presupuestos de manera eficiente. Estos programas facilitan la creación de presupuestos detallados, el seguimiento de gastos y la generación de informes financieros."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Ejemplo -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Ejemplo"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Utilizar Excel para un proyecto de desarrollo de software permite realizar cálculos automáticos de costos, generar gráficos para visualizar el presupuesto y comparar gastos reales con los previstos, facilitando la gestión financiera del proyecto."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Libro Recomendado -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Libro Recomendado"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Excel 2019 Power Programming with VBA de Michael Alexander y Dick Kusleika."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
