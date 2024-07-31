@@ -15,30 +15,44 @@ namespace FronEndProyecto.vistas
         public SectionsPage()
         {
             InitializeComponent();
+
         }
 
         private async void seccion1(object sender, EventArgs e)
         {
-            DisplayAlert($"Seccin 1", $"Descripción de la sección 1", "Entrar", "Cancelar");
-            Navigation.PushAsync(new seccionUno());
+            DisplayAlert($"Seccion 1", $"Descripción de la sección 1", "Entrar", "Cancelar");
+            await Navigation.PushAsync(new seccionUno());
 
         }
         private async void seccion2(object sender, EventArgs e)
         {
-            DisplayAlert($"Seccin 2", $"Descripción de la sección 1", "Entrar", "Cancelar");
-            Navigation.PushAsync(new seccionDos());
+            DisplayAlert($"Seccin 2", $"Descripción de la sección 2", "Entrar", "Cancelar");
+            await Navigation.PushAsync(new SeccionDos());
 
         }
         private async void seccion3(object sender, EventArgs e)
         {
-            DisplayAlert($"Seccin 3", $"Descripción de la sección 1", "Entrar", "Cancelar");
-            Navigation.PushAsync(new seccionTres());
+            DisplayAlert($"Seccin 3", $"Descripción de la sección 3", "Entrar", "Cancelar");
+            await Navigation.PushAsync(new seccionTres());
 
         }
         private async void seccion4(object sender, EventArgs e)
         {
-            DisplayAlert($"Seccin 4", $"Descripción de la sección 1", "Entrar", "Cancelar");
-            Navigation.PushAsync(new seccionCuatro());
+            DisplayAlert($"Seccin 4", $"Descripción de la sección 4", "Entrar", "Cancelar");
+            await Navigation.PushAsync(new seccionCuatro());
+
+        }
+
+        private async void seccion5(object sender, EventArgs e)
+        {
+            DisplayAlert($"Seccin 5", $"Descripción de la sección 5", "Entrar", "Cancelar");
+            await Navigation.PushAsync(new seccionCuatro());
+
+        }
+        private async void seccion6(object sender, EventArgs e)
+        {
+            DisplayAlert($"Seccin 6", $"Descripción de la sección 6", "Entrar", "Cancelar");
+            await Navigation.PushAsync(new seccionCuatro());
 
         }
 

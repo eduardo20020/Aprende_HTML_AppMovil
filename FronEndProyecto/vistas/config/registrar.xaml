@@ -2,77 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.config.registrar">
-
-    <Grid>
+    <AbsoluteLayout>
         <!-- Imagen de fondo -->
         <Image Source="https://i.pinimg.com/564x/93/e4/b9/93e4b902729431d3315ebec40f7cf8e8.jpg"
                Aspect="AspectFill"
-               Opacity="0.8" 
-               Grid.RowSpan="2" />
+               Opacity="0.8"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All" />
 
-        <ScrollView>
-            <!-- Contenido sobre la imagen -->
-            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                <Label Text="Regístrate aquí" 
-                       TextColor="White" 
-                       FontSize="Title" 
-                       HorizontalOptions="CenterAndExpand" />
+        <!-- Contenido sobre la imagen -->
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+            <Label Text="Regístrate aquí"
+                   TextColor="White"
+                   FontSize="24"
+                   HorizontalOptions="CenterAndExpand" />
 
-                <Label
-                    Text="Dame tu nombre: "
-                    HorizontalOptions="CenterAndExpand"/>
-                <Entry x:Name="nombreDos" />
+            <Label Text="Dame tu nombre: "
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="nombreDos" />
 
-                <Label
-                    Text="Dame tu correo: "
-                    HorizontalOptions="CenterAndExpand"/>
-                <Entry x:Name="correoDos"/>
+            <Label Text="Dame tu correo: "
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="correoDos" />
 
-                <Label
-                    Text="Dame tu contraseña: "
-                    HorizontalOptions="CenterAndExpand"/>
-                <Entry x:Name="contraDos" IsPassword="True" />
+            <Label Text="Dame tu contraseña: "
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="contraDos" IsPassword="True" />
 
+            <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                <Button Text="Regístrate"
+                        TextColor="White"
+                        FontSize="18"
+                        BackgroundColor="Transparent"
+                        BorderColor="White"
+                        CornerRadius="25"
+                        WidthRequest="200"
+                        HeightRequest="60"
+                        Clicked="postRegistrar"/>
 
-
-
-                <StackLayout>
-                    <Label x:Name="reponseDos"  TextColor="White" />
-                </StackLayout>
-
-
-
-                <StackLayout Spacing="0" HorizontalOptions="CenterAndExpand">
-                    <Button
-                         Text="Registrate !"
-                         TextColor="White"
-                         FontSize="Title"
-                         BackgroundColor="Transparent"
-                         BorderColor="White"
-                         HorizontalOptions="Center"
-                         CornerRadius="25"
-                         WidthRequest="190"
-                         HeightRequest="60"
-                         Clicked="postRegistrar"/>
-                </StackLayout>
-
-
-                <StackLayout Spacing="0" HorizontalOptions="CenterAndExpand">
-                    <Button
-                         Text="Inisia sesion aqui !"
-                         TextColor="White"
-                         FontSize="Title"
-                         BackgroundColor="Transparent"
-                         BorderColor="White"
-                         HorizontalOptions="Center"
-                         CornerRadius="25"
-                         WidthRequest="190"
-                         HeightRequest="60"
-                         Clicked="iniciarSesion"/>
-                </StackLayout>
-
-
+                <Button Text="Inicia sesión aquí"
+                        TextColor="White"
+                        FontSize="18"
+                        BackgroundColor="Transparent"
+                        BorderColor="White"
+                        CornerRadius="25"
+                        WidthRequest="200"
+                        HeightRequest="60"
+                        Clicked="iniciarSesion"/>
             </StackLayout>
-        </ScrollView>
-    </Grid>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>

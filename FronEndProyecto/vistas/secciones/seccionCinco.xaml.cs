@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FronEndProyecto.vistas.secciones
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class seccionCuatro : ContentPage
+    public partial class seccionCinco : ContentPage
     {
-        public seccionCuatro()
+        public seccionCinco()
         {
             InitializeComponent();
         }

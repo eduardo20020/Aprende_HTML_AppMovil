@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FronEndProyecto.vistas.secciones.seccionDos">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.SECCIONDOS!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="FronEndProyecto.vistas.secciones.SeccionDos">
+
+    <StackLayout Padding="10">
+        <Label Text="Menú de Secciones" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="10"/>
+
+        <Button Text="Sección 1" 
+                FontSize="Medium"
+                Clicked="OnSection1Clicked"/>
+        <Button Text="Sección 2" 
+                FontSize="Medium"
+                Clicked="OnSection2Clicked"/>
+        <Button Text="Sección 3" 
+                FontSize="Medium"
+                Clicked="OnSection3Clicked"/>
+        <Button Text="Sección 4" 
+                FontSize="Medium"
+                Clicked="OnSection4Clicked"/>
+        <Button Text="Sección 5" 
+                FontSize="Medium"
+                Clicked="OnSection5Clicked"/>
+    </StackLayout>
 </ContentPage>

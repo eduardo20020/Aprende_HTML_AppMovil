@@ -48,24 +48,25 @@ namespace FronEndProyecto.vistas.config
                 if (response.IsSuccessStatusCode)
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    if (responseBody.ToString() == "El correo ya existe")
+                    if (responseBody == "El correo ya existe")
                     {
                         await DisplayAlert("Error", "El correo ya existe", "OK");
                     }
                     else
                     {
-                        await DisplayAlert("Registrado", responseBody.ToString(), "OK");
-                        Navigation.PushModalAsync(new login());
+                        await DisplayAlert("Registrado", responseBody, "OK");
+                        await Navigation.PushModalAsync(new login());
                     }
-
                 }
                 else
                 {
+                    await DisplayAlert("Error", "No se pudo conectar con el servidor.", "OK");
                 }
             }
             catch (Exception ex)
             {
-                // Manejo de excepciones
+                // Mostrar mensaje de error al usuario
+                await DisplayAlert("Error", "Ocurrió un error: " + ex.Message, "OK");
             }
         }
 

@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FronEndProyecto.vistas.secciones
+namespace FronEndProyecto.vistas.subtemas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class seccionCuatro : ContentPage
+    public partial class Section4Page : ContentPage
     {
-        public seccionCuatro()
+        public Section4Page()
         {
             InitializeComponent();
-        }
-
-        private void LeccionesListView_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-
         }
     }
 }

@@ -16,5 +16,10 @@ namespace FronEndProyecto.vistas.secciones
         {
             InitializeComponent();
         }
+
+        private void LeccionesListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
     }
 }
