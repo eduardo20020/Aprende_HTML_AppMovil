@@ -4,155 +4,149 @@
              x:Class="FronEndProyecto.vistas.SectionsPage"
              BackgroundImageSource="https://i.pinimg.com/736x/46/c9/21/46c921ba69d71bb284cfc5e2e6a2f4a9.jpg">
     <ContentPage.Content>
-        <Grid Padding="15" RowSpacing="20" ColumnSpacing="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-
+        <StackLayout Padding="20" Spacing="20">
             <!-- Título de la página -->
             <Label 
-                Text="Elige una sección"
-                 FontAttributes="Bold"
-                   FontSize="30"
-                   HorizontalOptions="Center"
-                   Margin="0,20,0,20"
-                   Grid.Row="0"
-                   Grid.ColumnSpan="2" />
+                Text="Bienvenido!"
+                x:Name="lblInicial"
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,30,0,20" />
 
-            <!-- Sección 1 -->
-            <StackLayout Margin="10" Grid.Row="1" Grid.Column="0">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 1"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion1" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
+            <!-- Contenedor para las secciones -->
+            <StackLayout Spacing="20">
+                <!-- Fila 1 -->
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <!-- Sección 1 -->
+                    <Frame Padding="15"
+                           HasShadow="True"
+                           BackgroundColor="White"
+                           BorderColor="LightGray"
+                           CornerRadius="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10">
+                        <Label Text="Lección 1"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="DarkSlateGray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="seccion1" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
 
-            <!-- Sección 2 -->
-            <StackLayout Margin="10" Grid.Row="1" Grid.Column="1">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 2"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion2" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
+                    <!-- Sección 2 -->
+                    <Frame Padding="15"
+                           HasShadow="True"
+                           BackgroundColor="White"
+                           BorderColor="LightGray"
+                           CornerRadius="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10">
+                        <Label Text="Lección 2"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="DarkSlateGray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="seccion2" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </StackLayout>
 
-            <!-- Sección 3 -->
-            <StackLayout Margin="10" Grid.Row="2" Grid.Column="0">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 3"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion3" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
+                <!-- Fila 2 -->
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <!-- Sección 3 -->
+                    <Frame Padding="15"
+                           HasShadow="True"
+                           BackgroundColor="White"
+                           BorderColor="LightGray"
+                           CornerRadius="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10">
+                        <Label Text="Lección 3"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="DarkSlateGray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="seccion3" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
 
-            <!-- Sección 4 -->
-            <StackLayout Margin="10" Grid.Row="2" Grid.Column="1">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 4"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion4" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
+                    <!-- Sección 4 -->
+                    <Frame Padding="15"
+                           HasShadow="True"
+                           BackgroundColor="White"
+                           BorderColor="LightGray"
+                           CornerRadius="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10">
+                        <Label Text="Lección 4"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="DarkSlateGray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="seccion4" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </StackLayout>
 
-            <!-- Sección 5 -->
-            <StackLayout Margin="10" Grid.Row="3" Grid.Column="0">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 5"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion5" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
+                <!-- Fila 3 -->
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <!-- Sección 5 -->
+                    <Frame Padding="15"
+                           HasShadow="True"
+                           BackgroundColor="White"
+                           BorderColor="LightGray"
+                           CornerRadius="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10">
+                        <Label Text="Lección 5"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="DarkSlateGray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="seccion5" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
 
-            <!-- Sección 6 -->
-            <StackLayout Margin="10" Grid.Row="3" Grid.Column="1">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 6"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion6" />
-                    </Frame.GestureRecognizers>
-                </Frame>
+                    <!-- Sección 6 -->
+                    <Frame Padding="15"
+                           HasShadow="True"
+                           BackgroundColor="White"
+                           BorderColor="LightGray"
+                           CornerRadius="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="FillAndExpand"
+                           Margin="10">
+                        <Label Text="Lección 6"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="DarkSlateGray"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="seccion6" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </StackLayout>
             </StackLayout>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
