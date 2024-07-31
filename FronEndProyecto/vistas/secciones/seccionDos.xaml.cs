@@ -31,10 +31,5 @@ namespace FronEndProyecto.vistas.secciones
         {
             await Navigation.PushAsync(new Section4Page());
         }
-
-        private async void OnSection5Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Section5Page());
-        }
     }
 }

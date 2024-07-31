@@ -21,8 +21,5 @@
         <Button Text="Sección 4" 
                 FontSize="Medium"
                 Clicked="OnSection4Clicked"/>
-        <Button Text="Sección 5" 
-                FontSize="Medium"
-                Clicked="OnSection5Clicked"/>
     </StackLayout>
 </ContentPage>

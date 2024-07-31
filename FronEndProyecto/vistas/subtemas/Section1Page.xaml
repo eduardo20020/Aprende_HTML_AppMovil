@@ -2,11 +2,52 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.subtemas.Section1Page">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ScrollView>
+        <StackLayout Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Costos Fijos vs. Costos Variables"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <!-- Concepto -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Concepto"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Los costos fijos permanecen constantes independientemente del nivel de producción, mientras que los costos variables cambian con el volumen de producción."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Ejemplo -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Ejemplo"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="En una fábrica, el alquiler y los sueldos del personal administrativo son costos fijos. Los costos de materias primas y energía son variables, ya que dependen de la cantidad producida."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Libro Recomendado -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Libro Recomendado"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Managerial Accounting: Creating Value in a Dynamic Business Environment  de Ronald W. Hilton."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

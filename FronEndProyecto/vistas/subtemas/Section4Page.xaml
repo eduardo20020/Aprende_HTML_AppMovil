@@ -2,11 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.subtemas.Section4Page">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ScrollView>
+        <StackLayout Spacing="20">
+
+            <Label Text="Control de Costos"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Concepto"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Controlar los costos implica monitorear y ajustar el presupuesto según el progreso del proyecto para mantener los gastos bajo control. Esto requiere la identificación de cualquier desviación entre los costos planificados y los reales, y la implementación de acciones correctivas para alinear los costos reales con el presupuesto."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Ejemplo"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Durante la fase de construcción de un edificio, se monitorean los gastos en materiales y mano de obra. Si los costos reales superan el presupuesto, se realizan ajustes como reducir costos en ciertas áreas o negociar mejores precios con proveedores para mantener el proyecto dentro del presupuesto."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Libro Recomendado"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Project Cost Control in Construction de J. R. H. Robson."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

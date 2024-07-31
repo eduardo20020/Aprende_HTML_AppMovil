@@ -2,11 +2,52 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.subtemas.Leccion3Page">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ScrollView>
+        <StackLayout Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Componentes del Presupuesto"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <!-- Concepto -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Concepto"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Incluye costos fijos (no cambian con la producción), costos variables (fluctúan con la producción), costos directos (asignables directamente al proyecto) y costos indirectos (gastos generales no asignables directamente a un proyecto)."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Ejemplo -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Ejemplo"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="En construcción, el costo del cemento y la mano de obra son costos directos, mientras que el alquiler del edificio y la electricidad son costos indirectos."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Libro Recomendado -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Libro Recomendado"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Cost Management for Projects: Methods for Increasing Value and Reducing Costde Michael D. Green."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>
