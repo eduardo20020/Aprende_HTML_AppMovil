@@ -37,7 +37,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -58,7 +58,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion2" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -79,7 +79,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion3" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -100,7 +100,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion4" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -121,7 +121,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -142,7 +142,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -163,7 +163,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -184,7 +184,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -205,7 +205,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
@@ -226,7 +226,7 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSectionTapped" />
+                        <TapGestureRecognizer Tapped="seccion1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>

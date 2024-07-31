@@ -1,5 +1,7 @@
-﻿using FronEndProyecto.vistas.config;
+﻿using FronEndProyecto.vistas;
+using FronEndProyecto.vistas.config;
 using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +13,14 @@ namespace FronEndProyecto
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new inicioConfig());
+            if (Preferences.Get("correo", string.Empty) == string.Empty)
+            {
+                MainPage = new NavigationPage(new inicioConfig());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new SectionsPage());
+            }
         }
 
         protected override void OnStart()
