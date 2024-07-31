@@ -5,16 +5,20 @@
 
     <Grid>
         <!-- Imagen de fondo -->
-        <Image Source="https://apibrandon.eastus.cloudapp.azure.com/img/orange-gradient.jpg"
+        <Image Source="https://i.pinimg.com/564x/93/e4/b9/93e4b902729431d3315ebec40f7cf8e8.jpg"
                Aspect="AspectFill"
                Opacity="0.8" 
                Grid.RowSpan="2" />
 
         <!-- Contenido sobre la imagen -->
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label Text="Bienvenido a la mejor App, para aprender HTML" 
-                   TextColor="White" 
-                   FontSize="38" 
+            <Label Text="Bienvenido a la mejor App, para aprender HTML
+                   
+                   
+                   
+                   " 
+                   TextColor="black" 
+                   FontSize="30" 
                    FontAttributes="Bold"
                    HorizontalOptions="Center" 
                    />
@@ -26,16 +30,10 @@
                         BackgroundColor="Transparent"
                         BorderColor="White"
                         HorizontalOptions="Center"
+                        CornerRadius="25"
                         WidthRequest="200"
                         HeightRequest="50"
                         Clicked="Iniciar"/>
-
-                <Image Source="https://apibrandon.eastus.cloudapp.azure.com/img/flecha-correctaDos.png"
-                       MinimumHeightRequest="40">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Iniciar" />
-                    </Image.GestureRecognizers>
-                </Image>
             </StackLayout>
         </StackLayout>
     </Grid>

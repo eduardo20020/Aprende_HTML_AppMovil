@@ -49,7 +49,7 @@ namespace FronEndProyecto.vistas.config
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
                     await DisplayAlert("Registrado", responseBody.ToString() , "OK");
-                    Navigation.PushModalAsync(new login());
+                    Navigation.PushModalAsync(new SectionsPage());
                 }
                 else
                 {

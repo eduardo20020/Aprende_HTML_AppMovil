@@ -5,56 +5,56 @@
 
     <Grid>
         <!-- Imagen de fondo -->
-        <Image Source="https://apibrandon.eastus.cloudapp.azure.com/img/orange-gradient.jpg"
+        <Image Source="https://i.pinimg.com/564x/93/e4/b9/93e4b902729431d3315ebec40f7cf8e8.jpg"
                Aspect="AspectFill"
                Opacity="0.8" 
                Grid.RowSpan="2" />
 
         <ScrollView>
             <!-- Contenido sobre la imagen -->
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                 <Label Text="Regístrate aquí" 
                        TextColor="White" 
                        FontSize="Title" 
-                       HorizontalOptions="Center" />
+                       HorizontalOptions="CenterAndExpand" />
 
-                <Label Text="Dame tu nombre: " />
+                <Label
+                    Text="Dame tu nombre: "
+                    HorizontalOptions="CenterAndExpand"/>
                 <Entry x:Name="nombreDos" />
 
-                <Label Text="Dame tu correo: " />
-                <Entry x:Name="correoDos" />
+                <Label
+                    Text="Dame tu correo: "
+                    HorizontalOptions="CenterAndExpand"/>
+                <Entry x:Name="correoDos"/>
 
-                <Label Text="Dame tu contraseña: " />
+                <Label
+                    Text="Dame tu contraseña: "
+                    HorizontalOptions="CenterAndExpand"/>
                 <Entry x:Name="contraDos" IsPassword="True" />
 
 
 
 
                 <StackLayout>
-                    <Label x:Name="reponseDos" Text="juan" TextColor="White" />
+                    <Label x:Name="reponseDos"  TextColor="White" />
                 </StackLayout>
 
 
 
-                <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="Center">
-                    <Button Text="Registrar"
-                            TextColor="White"
-                            FontSize="Title"
-                            BackgroundColor="Transparent"
-                            BorderColor="White"
-                            HorizontalOptions="Center"
-                            WidthRequest="200"
-                            HeightRequest="50"
-                            Clicked="postRegistrar"/>
-
-                    <Image Source="https://apibrandon.eastus.cloudapp.azure.com/img/flecha-correctaDos.png"
-                           MinimumHeightRequest="40">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="postRegistrar" />
-                        </Image.GestureRecognizers>
-                    </Image>
+                <StackLayout Spacing="0" HorizontalOptions="CenterAndExpand">
+                    <Button
+                         Text="Registrate !"
+                         TextColor="White"
+                         FontSize="Title"
+                         BackgroundColor="Transparent"
+                         BorderColor="White"
+                         HorizontalOptions="Center"
+                         CornerRadius="25"
+                         WidthRequest="190"
+                         HeightRequest="60"
+                         Clicked="postRegistrar"/>
                 </StackLayout>
-
             </StackLayout>
         </ScrollView>
     </Grid>
