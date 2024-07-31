@@ -2,11 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.login">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <StackLayout>
+
+        <Label Text="Inicio de Sesion" FontSize="Title" FontAttributes="Bold"/>
+
+        <Label Text="Correo:"/>
+        <Entry x:Name="correoDos"/>
+
+        <Label Text="contrasena:"/>
+        <Entry x:Name="contraDos"/>
+
+        <Button Text="entrar" Clicked="IniciarSesion"/>
+        <Button Text="Aun no tines cuenta?" Clicked="Registrar"/>
+
+
+    </StackLayout>
 </ContentPage>

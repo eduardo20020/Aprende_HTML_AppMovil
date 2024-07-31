@@ -55,6 +55,23 @@
                          HeightRequest="60"
                          Clicked="postRegistrar"/>
                 </StackLayout>
+
+
+                <StackLayout Spacing="0" HorizontalOptions="CenterAndExpand">
+                    <Button
+                         Text="Inisia sesion aqui !"
+                         TextColor="White"
+                         FontSize="Title"
+                         BackgroundColor="Transparent"
+                         BorderColor="White"
+                         HorizontalOptions="Center"
+                         CornerRadius="25"
+                         WidthRequest="190"
+                         HeightRequest="60"
+                         Clicked="iniciarSesion"/>
+                </StackLayout>
+
+
             </StackLayout>
         </ScrollView>
     </Grid>

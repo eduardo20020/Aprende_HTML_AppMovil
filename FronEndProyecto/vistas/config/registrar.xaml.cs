@@ -17,7 +17,7 @@ namespace FronEndProyecto.vistas.config
         {
             InitializeComponent();
         }
-        
+
         private async void postRegistrar(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(nombreDos.Text) ||
@@ -48,19 +48,30 @@ namespace FronEndProyecto.vistas.config
                 if (response.IsSuccessStatusCode)
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    await DisplayAlert("Registrado", responseBody.ToString() , "OK");
-                    Navigation.PushModalAsync(new SectionsPage());
+                    if (responseBody.ToString() == "El correo ya existe")
+                    {
+                        await DisplayAlert("Error", "El correo ya existe", "OK");
+                    }
+                    else
+                    {
+                        await DisplayAlert("Registrado", responseBody.ToString(), "OK");
+                        Navigation.PushModalAsync(new login());
+                    }
+
                 }
                 else
                 {
-                    reponseDos.Text = $"Error: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 // Manejo de excepciones
-                reponseDos.Text = $"Error: {ex.Message}";
             }
+        }
+
+        private void iniciarSesion(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new login());
         }
     }
 }
