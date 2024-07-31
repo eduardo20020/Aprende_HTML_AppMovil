@@ -23,10 +23,10 @@ namespace FronEndProyecto.vistas.secciones
         {
             var less = new List<Less>
             {
-                new Less {  NameLess = "Lección 1: Software de Gestión Financiera", Page = typeof(sub1)},
-                new Less {  NameLess = "Lección 2: Método del Valor Ganado", Page = typeof(sub2)},
-                new Less {  NameLess = "Lección 3: Análisis de Brechas", Page = typeof(sub3)},
-                new Less {  NameLess = "Lección 4: TPresupuestación Basada en Actividades", Page = typeof(sub4)},
+                new Less {  NameLess = "Lección 1: Planificación de Costos", Page = typeof(sub1)},
+                new Less {  NameLess = "Leccion 2:Estructura de Desglose de Trabajo (WBS)", Page = typeof(sub2)},
+                new Less {  NameLess = "Lección 3: Control de Costos", Page = typeof(sub3)},
+                new Less {  NameLess = "Lección 4: Análisis de Variaciones", Page = typeof(sub4)},
                 // Agrega más lecciones aquí
             };
 
