@@ -2,43 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.subtemas.examenUno">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="FontSize" Value="Small"/>
+            <Setter Property="TextColor" Value="DarkGray"/>
+            <Setter Property="Margin" Value="10,5,0,5"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007AFF"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+        </Style>
+    </ContentPage.Resources>
 
+    <!-- Contenido de la página -->
     <ScrollView>
-        <StackLayout Padding="10">
-            <!-- Question 1 -->
-            <Label Text="1. ¿Qué diferencia hay entre costos fijos y costos variables en un presupuesto? Proporcione ejemplos de cada uno." 
-                   FontSize="Medium" />
-            <RadioButton GroupName="Q1" Content="A) Los costos fijos varían con la producción, mientras que los costos variables permanecen constantes. Ejemplo de costos fijos: salarios; ejemplo de costos variables: alquiler." />
-            <RadioButton GroupName="Q1" Content="B) Los costos fijos permanecen constantes independientemente del nivel de producción, mientras que los costos variables cambian con el nivel de producción. Ejemplo de costos fijos: alquiler; ejemplo de costos variables: materiales." />
-            <RadioButton GroupName="Q1" Content="C) Los costos fijos son siempre más altos que los costos variables. Ejemplo de costos fijos: materiales; ejemplo de costos variables: salarios." />
-            <RadioButton GroupName="Q1" Content="D) No hay diferencia significativa entre costos fijos y costos variables." />
-
-            <!-- Question 2 -->
-            <Label Text="2. ¿Cómo se calculan los costos directos e indirectos? Dé un ejemplo de cada tipo de costo en un proyecto de construcción." 
-                   FontSize="Medium" />
-            <RadioButton GroupName="Q2" Content="A) Los costos directos se asignan directamente a un proyecto específico, mientras que los costos indirectos se reparten entre varios proyectos. Ejemplo de costo directo: materiales; ejemplo de costo indirecto: seguridad." />
-            <RadioButton GroupName="Q2" Content="B) Los costos directos son siempre mayores que los costos indirectos. Ejemplo de costo directo: seguridad; ejemplo de costo indirecto: materiales." />
-            <RadioButton GroupName="Q2" Content="C) Los costos indirectos se asignan directamente a un proyecto específico, mientras que los costos directos se reparten entre varios proyectos. Ejemplo de costo directo: alquiler; ejemplo de costo indirecto: salarios." />
-            <RadioButton GroupName="Q2" Content="D) Los costos directos e indirectos se calculan de la misma manera y no tienen ejemplos específicos." />
-
-            <!-- Question 3 -->
-            <Label Text="3. ¿Qué es un presupuesto incremental y cómo se diferencia de un presupuesto de base cero?" 
-                   FontSize="Medium" />
-            <RadioButton GroupName="Q3" Content="A) Un presupuesto incremental se basa en los gastos del año anterior, mientras que un presupuesto de base cero comienza desde cero cada año." />
-            <RadioButton GroupName="Q3" Content="B) Un presupuesto incremental aumenta los gastos del año anterior en un porcentaje específico, mientras que un presupuesto de base cero justifica cada gasto desde cero." />
-            <RadioButton GroupName="Q3" Content="C) Un presupuesto incremental y un presupuesto de base cero son términos intercambiables." />
-            <RadioButton GroupName="Q3" Content="D) Un presupuesto incremental es siempre más efectivo que un presupuesto de base cero." />
-
-            <!-- Question 4 -->
-            <Label Text="4. ¿Cómo puede el análisis de costos y beneficios influir en la toma de decisiones financieras en un proyecto?" 
-                   FontSize="Medium" />
-            <RadioButton GroupName="Q4" Content="A) El análisis de costos y beneficios no tiene influencia en las decisiones financieras de un proyecto." />
-            <RadioButton GroupName="Q4" Content="B) El análisis de costos y beneficios ayuda a determinar si los beneficios superan los costos, lo que facilita la toma de decisiones informadas." />
-            <RadioButton GroupName="Q4" Content="C) El análisis de costos y beneficios siempre resulta en la cancelación del proyecto." />
-            <RadioButton GroupName="Q4" Content="D) El análisis de costos y beneficios solo se utiliza en proyectos gubernamentales." />
-
-            <!-- Submit Button -->
-            <Button Text="Enviar" Clicked="OnSubmitClicked" />
+        <StackLayout Padding="20" Spacing="10" VerticalOptions="FillAndExpand">
+            <ContentView x:Name="QuestionContainer" Padding="10" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
+                <Button Text="Anterior" Clicked="OnPreviousClicked" IsEnabled="False" x:Name="PreviousButton"/>
+                <Button Text="Siguiente" Clicked="OnNextClicked" x:Name="NextButton"/>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>

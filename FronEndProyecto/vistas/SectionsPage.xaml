@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FronEndProyecto.vistas.SectionsPage"
-             BackgroundImageSource="https://i.pinimg.com/736x/46/c9/21/46c921ba69d71bb284cfc5e2e6a2f4a9.jpg">
+             BackgroundImageSource="https://i.pinimg.com/564x/14/67/4e/14674e94edd993f01d7580417e401b1e.jpg">
     <ContentPage.Content>
         <StackLayout Padding="20" Spacing="20">
             <!-- Título de la página -->
@@ -83,29 +83,6 @@
                         </Frame.GestureRecognizers>
                     </Frame>
 
-<<<<<<< HEAD
-            <!-- Sección 4 -->
-            <StackLayout Margin="10" Grid.Row="2" Grid.Column="1">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 4"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion4" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
-        </Grid>
-=======
                     <!-- Sección 4 -->
                     <Frame Padding="15"
                            HasShadow="True"
@@ -126,51 +103,7 @@
                         </Frame.GestureRecognizers>
                     </Frame>
                 </StackLayout>
-
-                <!-- Fila 3 -->
-                <StackLayout Orientation="Horizontal" Spacing="20">
-                    <!-- Sección 5 -->
-                    <Frame Padding="15"
-                           HasShadow="True"
-                           BackgroundColor="White"
-                           BorderColor="LightGray"
-                           CornerRadius="15"
-                           VerticalOptions="Start"
-                           HorizontalOptions="FillAndExpand"
-                           Margin="10">
-                        <Label Text="Lección 5"
-                               FontSize="20"
-                               FontAttributes="Bold"
-                               TextColor="DarkSlateGray"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center" />
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="seccion5" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
-
-                    <!-- Sección 6 -->
-                    <Frame Padding="15"
-                           HasShadow="True"
-                           BackgroundColor="White"
-                           BorderColor="LightGray"
-                           CornerRadius="15"
-                           VerticalOptions="Start"
-                           HorizontalOptions="FillAndExpand"
-                           Margin="10">
-                        <Label Text="Lección 6"
-                               FontSize="20"
-                               FontAttributes="Bold"
-                               TextColor="DarkSlateGray"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center" />
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="seccion6" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
-                </StackLayout>
             </StackLayout>
         </StackLayout>
->>>>>>> eeca9c5110aba91b33113147b439eb04e75aee76
     </ContentPage.Content>
 </ContentPage>
