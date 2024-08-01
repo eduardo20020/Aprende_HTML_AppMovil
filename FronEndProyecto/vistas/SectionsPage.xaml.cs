@@ -15,8 +15,14 @@ namespace FronEndProyecto.vistas
         public SectionsPage()
         {
             InitializeComponent();
-            lblInicial.Text = $"Bienvenido {Preferences.Get("nombre", string.Empty)}!";
 
+
+        }
+        protected override void OnAppearing()
+        {
+            // Lógica para actualizar la vista
+            lblProgreso.Text = $"Tu progreso es {Preferences.Get("progreso", string.Empty)}!";
+            lblInicial.Text = $"Bienvenido {Preferences.Get("nombre", string.Empty)}!";
         }
 
         private async void seccion1(object sender, EventArgs e)

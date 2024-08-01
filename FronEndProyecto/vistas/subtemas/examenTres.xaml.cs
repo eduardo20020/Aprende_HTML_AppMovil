@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
-
+using System.Text.Json;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,8 +13,11 @@ namespace FronEndProyecto.vistas.subtemas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class examenTres : ContentPage
     {
+        private static readonly HttpClient client = new HttpClient();
+
         private int currentQuestionIndex = 0;
         private List<ContentView> questions = new List<ContentView>();
+
         public examenTres()
         {
             InitializeComponent();
@@ -108,7 +112,7 @@ namespace FronEndProyecto.vistas.subtemas
             };
         }
 
-        private void OnPreviousClicked(object sender, System.EventArgs e)
+        private void OnPreviousClicked(object sender, EventArgs e)
         {
             if (currentQuestionIndex > 0)
             {
@@ -117,7 +121,7 @@ namespace FronEndProyecto.vistas.subtemas
             }
         }
 
-        private void OnNextClicked(object sender, System.EventArgs e)
+        private void OnNextClicked(object sender, EventArgs e)
         {
             if (currentQuestionIndex < questions.Count - 1)
             {
@@ -126,9 +130,70 @@ namespace FronEndProyecto.vistas.subtemas
             }
             else
             {
-                // Aquí puedes manejar la lógica para cuando el usuario presiona "Enviar".
-                DisplayAlert("Examen completado", "Has completado el examen.", "OK");
+                OnSubmitClicked(sender, e);
             }
+        }
+
+        private async void OnSubmitClicked(object sender, EventArgs e)
+        {
+            int score = 0;
+            // Verificar respuestas
+            if (GetSelectedAnswer("Q1") == "A) Un software de gestión financiera puede automatizar la entrada de datos, generar informes, y facilitar el seguimiento y análisis de los presupuestos.") score++;
+            if (GetSelectedAnswer("Q2") == "A) Se aplica comparando el valor del trabajo realizado con el costo real y el presupuesto planificado. Ventajas: proporciona una visión precisa del progreso; desventajas: puede ser complejo de implementar.") score++;
+            if (GetSelectedAnswer("Q3") == "A) Es el proceso de comparar los costos planificados con los reales para identificar desviaciones y ajustar el presupuesto en consecuencia.") score++;
+            if (GetSelectedAnswer("Q4") == "B) Es importante porque asigna costos a actividades específicas, proporcionando una mayor precisión en el control de costos. Se implementa identificando actividades y asignando costos a cada una.") score++;
+
+            if (score == 4)
+            {
+                await DisplayAlert("Pasaste", "Felicidades, obtuviste 4/4", "OK");
+                // Lógica para manejar el caso de aprobación completa, como enviar datos al servidor o actualizar la UI
+                /////////
+                var progresoUsuario = new
+                {
+                    correo = Preferences.Get("correo", "sinNombre"),
+                    progreso = "75%"
+                };
+                Preferences.Set("progreso", "75%");
+
+                string json = JsonSerializer.Serialize(progresoUsuario);
+
+                try
+                {
+                    var url = "https://apibrandon.eastus.cloudapp.azure.com/api/progreso.php"; // Reemplaza con tu URL
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = await client.PostAsync(url, content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        var loginResponse = JsonSerializer.Deserialize<ProgresoResponse>(responseBody);
+                        DisplayAlert("progreso actualizado", $"{responseBody}", "ok");
+
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Error al iniciar sesión", "OK");
+                    }
+
+                }
+                catch
+                {
+
+                }
+
+            }
+            else
+            {
+                await DisplayAlert("No Aprobado", $"Tu puntuación es {score}/4", "OK");
+            }
+        }
+
+        private string GetSelectedAnswer(string groupName)
+        {
+            return questions
+                .SelectMany(view => ((StackLayout)view.Content).Children.OfType<RadioButton>())
+                .FirstOrDefault(rb => rb.GroupName == groupName && rb.IsChecked)?
+                .Content.ToString();
         }
     }
 }

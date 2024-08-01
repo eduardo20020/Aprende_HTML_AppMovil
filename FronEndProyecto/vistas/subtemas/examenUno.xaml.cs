@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +14,8 @@ namespace FronEndProyecto.vistas.subtemas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class examenUno : ContentPage
     {
+        private static readonly HttpClient client = new HttpClient();
+
         private int currentQuestionIndex;
         private Grid[] questionGrids;
 
@@ -126,7 +130,7 @@ namespace FronEndProyecto.vistas.subtemas
             }
         }
 
-        private void OnSubmitClicked(object sender, EventArgs e)
+        private async void OnSubmitClicked(object sender, EventArgs e)
         {
             // Obtener todas las respuestas seleccionadas
             var q1 = GetSelectedAnswer("Q1");
@@ -141,8 +145,56 @@ namespace FronEndProyecto.vistas.subtemas
             if (q3 == "B) Un presupuesto incremental aumenta los gastos del año anterior en un porcentaje específico, mientras que un presupuesto de base cero justifica cada gasto desde cero.") score++;
             if (q4 == "B) El análisis de costos y beneficios ayuda a determinar si los beneficios superan los costos, lo que facilita la toma de decisiones informadas.") score++;
 
-            // Mostrar resultado
-            DisplayAlert("Resultado", $"Tu puntuación es {score}/4", "OK");
+
+            if (score == 4)
+            {
+                DisplayAlert("Pasaste", "felicidades hiciste 4/4", "ok");
+                /////////
+                var progresoUsuario = new
+                {
+                    correo = Preferences.Get("correo", "sinNombre"),
+                    progreso = "25%"
+                };
+                Preferences.Set("progreso", "25%");
+
+                string json = JsonSerializer.Serialize(progresoUsuario);
+
+                try
+                {
+                    var url = "https://apibrandon.eastus.cloudapp.azure.com/api/progreso.php"; // Reemplaza con tu URL
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = await client.PostAsync(url, content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        var loginResponse = JsonSerializer.Deserialize<ProgresoResponse>(responseBody);
+                        DisplayAlert("progreso actualizado", $"{responseBody}", "ok");
+
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Error al iniciar sesión", "OK");
+                    }
+
+                }
+                catch
+                {
+
+                }
+
+
+
+
+
+
+                /////////
+            }
+            else if (score < 4)
+            {
+                DisplayAlert("No Aprobado", $"Tu puntuación es {score}/4", "ok");
+            }
+
         }
 
         private string GetSelectedAnswer(string groupName)
@@ -152,5 +204,19 @@ namespace FronEndProyecto.vistas.subtemas
                 .FirstOrDefault(r => r.GroupName == groupName && r.IsChecked)?
                 .Content.ToString();
         }
+    }
+
+
+
+
+
+    public class ProgresoResponse
+    {
+        public string error { get; set; }
+
+        public string mensaje { get; set; }
+        public string nombre { get; set; }
+        public string correo { get; set; }
+        public string progreso { get; set; }
     }
 }

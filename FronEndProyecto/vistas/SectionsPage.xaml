@@ -15,6 +15,16 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Margin="0,30,0,20" />
+
+            <Label 
+                Text="Bienvenido!"
+                x:Name="lblProgreso"
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,30,0,20" />
             <Button Text="Cambiar de cuenta" Clicked="cambiarCuenta" HorizontalOptions="Center"/>
 
             <!-- Contenedor para las secciones -->
