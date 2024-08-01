@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,7 @@ namespace FronEndProyecto.vistas
         public SectionsPage()
         {
             InitializeComponent();
+            lblInicial.Text = $"Bienvenido {Preferences.Get("nombre", string.Empty)}!";
 
         }
 
