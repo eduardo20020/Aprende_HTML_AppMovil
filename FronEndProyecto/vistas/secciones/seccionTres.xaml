@@ -8,8 +8,8 @@
                FontSize="24"
                HorizontalOptions="Center" />
 
-        <ListView x:Name="LeccionesListView"
-                  ItemTapped="LeccionesListView_ItemTapped">
+        <ListView x:Name="LeccionesList"
+                  ItemTapped="OnLessTapped">
             <!-- Definir el DataTemplate en el código detrás -->
         </ListView>
     </StackLayout>

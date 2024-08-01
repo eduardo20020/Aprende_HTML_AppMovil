@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FronEndProyecto.vistas.subtemas.sub2">
+
+    <ScrollView>
+        <StackLayout Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Estructura de Desglose de Trabajo (WBS)"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <!-- Concepto -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Concepto"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Descomposición del proyecto en componentes más pequeños y manejables para facilitar la estimación y el control de costos. La WBS ayuda a identificar todos los entregables del proyecto y asignar costos a cada componente."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Ejemplo -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Ejemplo"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="En un proyecto de construcción de un edificio, la WBS puede incluir fases como diseño, adquisición de materiales, construcción y supervisión, con costos asignados a cada fase."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Libro Recomendado -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Libro Recomendado"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Work Breakdown Structures: The Foundation for Project Management Excellence  de Eric S. Norman."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

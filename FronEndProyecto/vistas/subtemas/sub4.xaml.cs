@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FronEndProyecto.vistas
+namespace FronEndProyecto.vistas.subtemas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class sub4 : ContentPage
     {
-        public Page1()
+        public sub4()
         {
             InitializeComponent();
         }

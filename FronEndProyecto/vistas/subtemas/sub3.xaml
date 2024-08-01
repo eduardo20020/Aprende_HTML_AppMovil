@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FronEndProyecto.vistas.subtemas.sub3">
+
+    <ScrollView>
+        <StackLayout Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Control de Costos"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <!-- Concepto -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Concepto"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Monitorear y ajustar el presupuesto del proyecto para asegurar que los costos se mantengan dentro del límite establecido. Incluye la revisión continua de los gastos y la implementación de acciones correctivas cuando sea necesario."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Ejemplo -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Ejemplo"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text="Durante la fase de un proyecto de evento, se monitorean los gastos en diferentes categorías como catering y alquiler de equipos. Si se identifican sobrecostos, se realizan ajustes en otras áreas para mantener el presupuesto global."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+            <!-- Libro Recomendado -->
+            <StackLayout BackgroundColor="#FFFFFF"
+                         Padding="15">
+                <Label Text="Libro Recomendado"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#007BFF"/>
+                <Label Text=" Coost Control for the Hospitality Industry de Peter J. Harris."
+                       FontSize="16"
+                       TextColor="#333333"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
