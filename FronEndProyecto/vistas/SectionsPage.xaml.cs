@@ -43,5 +43,9 @@ namespace FronEndProyecto.vistas
             await Navigation.PushAsync(new seccionCuatro());
         }
 
+        private void cambiarCuenta(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new login());
+        }
     }
 }

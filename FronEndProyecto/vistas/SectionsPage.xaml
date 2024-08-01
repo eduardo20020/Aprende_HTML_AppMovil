@@ -15,6 +15,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Margin="0,30,0,20" />
+            <Button Text="Cambiar de cuenta" Clicked="cambiarCuenta" HorizontalOptions="Center"/>
 
             <!-- Contenedor para las secciones -->
             <StackLayout Spacing="20">
