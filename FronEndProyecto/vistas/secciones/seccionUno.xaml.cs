@@ -21,6 +21,7 @@ namespace FronEndProyecto.vistas.secciones
                 new Leccion { NombreLeccion = "Lección 2: Importancia del Presupuesto", Pagina = typeof(Leccion2Page) },
                 new Leccion { NombreLeccion = "Lección 3: Componentes del Presupuesto", Pagina = typeof(Leccion3Page)},
                 new Leccion { NombreLeccion = "Lección 4: Tipos de Presupuesto", Pagina = typeof(Leccion4Page)},
+                new Leccion { NombreLeccion = "Examen  1: Evaluacion Leccion Uno", Pagina = typeof(examenUno)},
                 // Agrega más lecciones aquí
             };
 

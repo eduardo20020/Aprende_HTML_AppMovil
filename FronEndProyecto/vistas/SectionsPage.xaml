@@ -111,48 +111,6 @@
                     </Frame.GestureRecognizers>
                 </Frame>
             </StackLayout>
-
-            <!-- Sección 5 -->
-            <StackLayout Margin="10" Grid.Row="3" Grid.Column="0">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 5"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion5" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
-
-            <!-- Sección 6 -->
-            <StackLayout Margin="10" Grid.Row="3" Grid.Column="1">
-                <Frame Padding="15"
-                       HasShadow="True"
-                       BackgroundColor="White"
-                       BorderColor="LightGray"
-                       CornerRadius="10"
-                       VerticalOptions="Start"
-                       HorizontalOptions="FillAndExpand">
-                    <Label Text="Lección 6"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="DarkSlateGray"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center" />
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="seccion6" />
-                    </Frame.GestureRecognizers>
-                </Frame>
-            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

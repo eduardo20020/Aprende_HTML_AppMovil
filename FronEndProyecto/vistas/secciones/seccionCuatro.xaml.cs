@@ -27,6 +27,7 @@ namespace FronEndProyecto.vistas.secciones
                 new Less {  NameLess = "Leccion 2:Estructura de Desglose de Trabajo (WBS)", Page = typeof(sub2)},
                 new Less {  NameLess = "Lección 3: Control de Costos", Page = typeof(sub3)},
                 new Less {  NameLess = "Lección 4: Análisis de Variaciones", Page = typeof(sub4)},
+                new Less {  NameLess = "Examen  4:  Evaluacion Leccion 4", Page = typeof(examenCuatro)},
                 // Agrega más lecciones aquí
             };
 

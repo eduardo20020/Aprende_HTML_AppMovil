@@ -26,6 +26,7 @@ namespace FronEndProyecto.vistas.secciones
                 new Leccionn { NombreLess = "Lección 2: Método del Valor Ganado", Pagin = typeof(Page2)},
                 new Leccionn { NombreLess = "Lección 3: Análisis de Brechas", Pagin = typeof(Page3)},
                 new Leccionn { NombreLess = "Lección 4: TPresupuestación Basada en Actividades", Pagin = typeof(Page4)},
+                new Leccionn { NombreLess = "Examen  3: Evaluacion Leccion 3", Pagin = typeof(examenTres)},
                 // Agrega más lecciones aquí
             };
 

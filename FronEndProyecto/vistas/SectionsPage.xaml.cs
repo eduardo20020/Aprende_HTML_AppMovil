@@ -40,20 +40,6 @@ namespace FronEndProyecto.vistas
         {
             DisplayAlert($"Seccin 4", $"Descripción de la sección 4", "Entrar", "Cancelar");
             await Navigation.PushAsync(new seccionCuatro());
-
-        }
-
-        private async void seccion5(object sender, EventArgs e)
-        {
-            DisplayAlert($"Seccin 5", $"Descripción de la sección 5", "Entrar", "Cancelar");
-            await Navigation.PushAsync(new seccionCuatro());
-
-        }
-        private async void seccion6(object sender, EventArgs e)
-        {
-            DisplayAlert($"Seccin 6", $"Descripción de la sección 6", "Entrar", "Cancelar");
-            await Navigation.PushAsync(new seccionCuatro());
-
         }
 
     }
