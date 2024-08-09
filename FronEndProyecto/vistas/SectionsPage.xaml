@@ -26,7 +26,7 @@
                 VerticalOptions="Center"
                 Margin="0,30,0,20" />
             <Button Text="Cambiar de cuenta" Clicked="cambiarCuenta" HorizontalOptions="Center"/>
-            <Button Text="ir al dashboard" Clicked="irDashboard" HorizontalOptions="Center"/>
+            <Button Text="ir a las lecciones" Clicked="irDashboard" HorizontalOptions="Center"/>
 
             <StackLayout Spacing="20">
                 <StackLayout Orientation="Horizontal" Spacing="20">
@@ -38,7 +38,7 @@
                            VerticalOptions="Start"
                            HorizontalOptions="FillAndExpand"
                            Margin="10">
-                        <Label Text="Lección 1"
+                        <Label Text="Examen 1"
                                FontSize="20"
                                FontAttributes="Bold"
                                TextColor="DarkSlateGray"
@@ -57,7 +57,7 @@
                            VerticalOptions="Start"
                            HorizontalOptions="FillAndExpand"
                            Margin="10">
-                        <Label Text="Lección 2"
+                        <Label Text="Examen 2"
                                FontSize="20"
                                FontAttributes="Bold"
                                TextColor="DarkSlateGray"
@@ -78,7 +78,7 @@
                            VerticalOptions="Start"
                            HorizontalOptions="FillAndExpand"
                            Margin="10">
-                        <Label Text="Lección 3"
+                        <Label Text="Examen 3"
                                FontSize="20"
                                FontAttributes="Bold"
                                TextColor="DarkSlateGray"
@@ -97,7 +97,7 @@
                            VerticalOptions="Start"
                            HorizontalOptions="FillAndExpand"
                            Margin="10">
-                        <Label Text="Lección 4"
+                        <Label Text="Examen 4"
                                FontSize="20"
                                FontAttributes="Bold"
                                TextColor="DarkSlateGray"
@@ -119,8 +119,8 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="registrarButton" Text="Registrar" Grid.Column="0" />
-                <Button x:Name="dashboardButton" Text="Dashboard" Grid.Column="1" />
-                <Button x:Name="sectionsButton" Text="Sections" Grid.Column="2" />
+                <Button x:Name="dashboardButton" Text="Lecciones" Grid.Column="1" />
+                <Button x:Name="sectionsButton" Text="Examenes" Grid.Column="2" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>
