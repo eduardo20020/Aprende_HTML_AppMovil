@@ -16,11 +16,21 @@ namespace FronEndProyecto.vistas
         public SectionsPage()
         {
             InitializeComponent();
+            lblProgreso.Text = $" Tu progreso es {Preferences.Get("progreso", string.Empty)} ";
+            lblInicial.Text = $" Hola {Preferences.Get("nombre", string.Empty)} !";
+
             registrarButton.Clicked += OnRegistrarButtonClicked;
             dashboardButton.Clicked += OnDashboardButtonClicked;
             sectionsButton.Clicked += OnSectionsButtonClicked;
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            lblInicial.Text = $" Hola {Preferences.Get("nombre", string.Empty)} !";
+            lblProgreso.Text = $" Tu progreso es {Preferences.Get("progreso", string.Empty)} ";
+
+        }
 
         private async void seccion1(object sender, EventArgs e)
         {
