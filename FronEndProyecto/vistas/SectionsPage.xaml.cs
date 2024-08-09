@@ -55,7 +55,7 @@ namespace FronEndProyecto.vistas
         }
         private void irDashboard(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new dashboard2());
+            Navigation.PushAsync(new contenido());
         }
     }
 }

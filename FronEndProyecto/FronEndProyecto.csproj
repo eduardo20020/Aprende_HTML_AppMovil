@@ -26,7 +26,7 @@
     <EmbeddedResource Update="vistas\config\registrar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="vistas\dashboard2.xaml">
+    <EmbeddedResource Update="vistas\contenido.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="vistas\login.xaml">
