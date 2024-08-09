@@ -151,8 +151,7 @@ namespace FronEndProyecto.vistas.subtemas
             if (score == 4)
             {
                 await DisplayAlert("Pasaste", "Felicidades, obtuviste 4/4", "OK");
-                // Lógica para manejar el caso de aprobación completa, como enviar datos al servidor o actualizar la UI
-                /////////
+
                 var progresoUsuario = new
                 {
                     correo = Preferences.Get("correo", "sinNombre"),
@@ -164,7 +163,7 @@ namespace FronEndProyecto.vistas.subtemas
 
                 try
                 {
-                    var url = "https://apibrandon.eastus.cloudapp.azure.com/api/progreso.php"; // Reemplaza con tu URL
+                    var url = "https://apibrandon.eastus.cloudapp.azure.com/api/progreso.php";
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await client.PostAsync(url, content);
 
@@ -172,20 +171,17 @@ namespace FronEndProyecto.vistas.subtemas
                     {
                         string responseBody = await response.Content.ReadAsStringAsync();
                         var loginResponse = JsonSerializer.Deserialize<ProgresoResponse>(responseBody);
-                        DisplayAlert("progreso actualizado", $"{responseBody}", "ok");
-
+                        DisplayAlert("Progreso Actualizado", $"{responseBody}", "OK");
                     }
                     else
                     {
                         await DisplayAlert("Error", "Error al iniciar sesión", "OK");
                     }
-
                 }
                 catch
                 {
-
+                    // Manejo de excepciones si es necesario
                 }
-
             }
             else
             {

@@ -50,13 +50,13 @@ namespace FronEndProyecto.vistas.subtemas
                     {
                         new Label
                         {
-                            Text = "1. ¿Qué pasos deben seguirse para una correcta planificación de costos en un proyecto?",
+                            Text = "1. ¿Cuál es la estructura básica de un formulario HTML?",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label))
                         },
-                        new RadioButton { GroupName = "Q1", Content = "A) Ignorar los costos indirectos y enfocarse solo en los directos." },
-                        new RadioButton { GroupName = "Q1", Content = "B) Definir el alcance del proyecto, estimar los costos, establecer un presupuesto y monitorear los gastos." },
-                        new RadioButton { GroupName = "Q1", Content = "C) Establecer un presupuesto y olvidarse de los detalles." },
-                        new RadioButton { GroupName = "Q1", Content = "D) Aumentar el presupuesto total para cubrir imprevistos." }
+                        new RadioButton { GroupName = "Q1", Content = "A) Un formulario HTML está compuesto por etiquetas <form>, <input>, <label> y <button>, entre otras." },
+                        new RadioButton { GroupName = "Q1", Content = "B) Un formulario HTML solo necesita una etiqueta <form> y nada más." },
+                        new RadioButton { GroupName = "Q1", Content = "C) Un formulario HTML no tiene estructura." },
+                        new RadioButton { GroupName = "Q1", Content = "D) Un formulario HTML se define solo con <input> y <button>." }
                     }
                 }
             };
@@ -72,13 +72,13 @@ namespace FronEndProyecto.vistas.subtemas
                     {
                         new Label
                         {
-                            Text = "2. Explique cómo una estructura de desglose de trabajo (WBS) puede facilitar la gestión de costos en un proyecto de construcción.",
+                            Text = "2. ¿Cómo se utiliza la etiqueta <input> en un formulario HTML y qué atributos son importantes?",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label))
                         },
-                        new RadioButton { GroupName = "Q2", Content = "A) Una WBS no tiene ninguna relación con la gestión de costos." },
-                        new RadioButton { GroupName = "Q2", Content = "B) Una WBS descompone el proyecto en tareas más pequeñas, permitiendo una mejor estimación y control de costos." },
-                        new RadioButton { GroupName = "Q2", Content = "C) Una WBS solo se utiliza en proyectos de software." },
-                        new RadioButton { GroupName = "Q2", Content = "D) Una WBS aumenta la complejidad del proyecto sin beneficios claros." }
+                        new RadioButton { GroupName = "Q2", Content = "A) La etiqueta <input> se usa para crear controles interactivos en un formulario, y los atributos como type, name y value son esenciales." },
+                        new RadioButton { GroupName = "Q2", Content = "B) La etiqueta <input> solo se usa para botones." },
+                        new RadioButton { GroupName = "Q2", Content = "C) La etiqueta <input> no requiere atributos." },
+                        new RadioButton { GroupName = "Q2", Content = "D) La etiqueta <input> es opcional en los formularios." }
                     }
                 }
             };
@@ -94,13 +94,13 @@ namespace FronEndProyecto.vistas.subtemas
                     {
                         new Label
                         {
-                            Text = "3. ¿Cómo se puede controlar eficazmente los costos de un proyecto en curso? Proporcione un ejemplo práctico.",
+                            Text = "3. ¿Qué es la validación de formularios en HTML y cómo se implementa?",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label))
                         },
-                        new RadioButton { GroupName = "Q3", Content = "A) Monitoreando regularmente los gastos, comparándolos con el presupuesto y ajustando según sea necesario. Ejemplo: utilizando software de gestión financiera para seguir los costos de un proyecto de construcción." },
-                        new RadioButton { GroupName = "Q3", Content = "B) Dejando que los costos se controlen solos." },
-                        new RadioButton { GroupName = "Q3", Content = "C) Estableciendo un presupuesto inicial y no haciendo seguimiento." },
-                        new RadioButton { GroupName = "Q3", Content = "D) Aumentando el presupuesto total a mitad del proyecto." }
+                        new RadioButton { GroupName = "Q3", Content = "A) La validación de formularios es el proceso de verificar los datos ingresados por el usuario antes de enviarlos. Se puede implementar utilizando atributos como required, minlength y pattern." },
+                        new RadioButton { GroupName = "Q3", Content = "B) La validación de formularios solo se hace en el servidor." },
+                        new RadioButton { GroupName = "Q3", Content = "C) La validación de formularios no es necesaria." },
+                        new RadioButton { GroupName = "Q3", Content = "D) La validación de formularios se realiza solo con JavaScript." }
                     }
                 }
             };
@@ -116,13 +116,13 @@ namespace FronEndProyecto.vistas.subtemas
                     {
                         new Label
                         {
-                            Text = "4. ¿Qué métodos se utilizan para analizar variaciones en el presupuesto y cómo se aplican en la práctica?",
+                            Text = "4. ¿Cuál es la diferencia entre el método GET y POST en los formularios HTML?",
                             FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label))
                         },
-                        new RadioButton { GroupName = "Q4", Content = "A) Métodos como el análisis de valor ganado, análisis de variaciones y análisis de brechas. Se aplican comparando los costos planificados con los reales y ajustando el presupuesto en consecuencia." },
-                        new RadioButton { GroupName = "Q4", Content = "B) Métodos como la eliminación de actividades y la reducción de calidad." },
-                        new RadioButton { GroupName = "Q4", Content = "C) No hay métodos específicos para analizar variaciones en el presupuesto." },
-                        new RadioButton { GroupName = "Q4", Content = "D) Métodos como la duplicación del presupuesto inicial y la eliminación de todas las actividades no esenciales." }
+                        new RadioButton { GroupName = "Q4", Content = "A) GET envía los datos del formulario en la URL, mientras que POST envía los datos en el cuerpo de la solicitud, siendo más seguro para enviar información sensible." },
+                        new RadioButton { GroupName = "Q4", Content = "B) GET y POST son exactamente lo mismo." },
+                        new RadioButton { GroupName = "Q4", Content = "C) POST envía los datos en la URL, mientras que GET los envía en el cuerpo de la solicitud." },
+                        new RadioButton { GroupName = "Q4", Content = "D) GET y POST no se usan en formularios HTML." }
                     }
                 }
             };
@@ -150,20 +150,19 @@ namespace FronEndProyecto.vistas.subtemas
             }
         }
 
-        private async  void OnSubmitClicked(object sender, EventArgs e)
+        private async void OnSubmitClicked(object sender, EventArgs e)
         {
             int score = 0;
             // Verificar respuestas
-            if (GetSelectedAnswer("Q1") == "B) Definir el alcance del proyecto, estimar los costos, establecer un presupuesto y monitorear los gastos.") score++;
-            if (GetSelectedAnswer("Q2") == "B) Una WBS descompone el proyecto en tareas más pequeñas, permitiendo una mejor estimación y control de costos.") score++;
-            if (GetSelectedAnswer("Q3") == "A) Monitoreando regularmente los gastos, comparándolos con el presupuesto y ajustando según sea necesario. Ejemplo: utilizando software de gestión financiera para seguir los costos de un proyecto de construcción.") score++;
-            if (GetSelectedAnswer("Q4") == "A) Métodos como el análisis de valor ganado, análisis de variaciones y análisis de brechas. Se aplican comparando los costos planificados con los reales y ajustando el presupuesto en consecuencia.") score++;
+            if (GetSelectedAnswer("Q1") == "A) Un formulario HTML está compuesto por etiquetas <form>, <input>, <label> y <button>, entre otras.") score++;
+            if (GetSelectedAnswer("Q2") == "A) La etiqueta <input> se usa para crear controles interactivos en un formulario, y los atributos como type, name y value son esenciales.") score++;
+            if (GetSelectedAnswer("Q3") == "A) La validación de formularios es el proceso de verificar los datos ingresados por el usuario antes de enviarlos. Se puede implementar utilizando atributos como required, minlength y pattern.") score++;
+            if (GetSelectedAnswer("Q4") == "A) GET envía los datos del formulario en la URL, mientras que POST envía los datos en el cuerpo de la solicitud, siendo más seguro para enviar información sensible.") score++;
 
             if (score == 4)
             {
                 await DisplayAlert("Pasaste", "Felicidades, obtuviste 4/4", "OK");
                 // Lógica para manejar el caso de aprobación completa, como enviar datos al servidor o actualizar la UI
-                /////////
                 var progresoUsuario = new
                 {
                     correo = Preferences.Get("correo", "sinNombre"),
@@ -184,19 +183,16 @@ namespace FronEndProyecto.vistas.subtemas
                         string responseBody = await response.Content.ReadAsStringAsync();
                         var loginResponse = JsonSerializer.Deserialize<ProgresoResponse>(responseBody);
                         DisplayAlert("progreso actualizado", $"{responseBody}", "ok");
-
                     }
                     else
                     {
-                        await DisplayAlert("Error", "Error al iniciar sesión", "OK");
+                        await DisplayAlert("Error", "Error al actualizar el progreso", "OK");
                     }
-
                 }
                 catch
                 {
-
+                    await DisplayAlert("Error", "Error en la conexión", "OK");
                 }
-
             }
             else
             {

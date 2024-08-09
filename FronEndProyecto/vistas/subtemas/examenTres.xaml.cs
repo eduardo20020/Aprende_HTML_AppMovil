@@ -48,11 +48,11 @@ namespace FronEndProyecto.vistas.subtemas
                 {
                     Children =
                     {
-                        new Label { Text = "1. ¿Qué funciones ofrece un software de gestión financiera y cómo puede facilitar la creación y gestión de presupuestos?" },
-                        new RadioButton { GroupName = "Q1", Content = "A) Un software de gestión financiera puede automatizar la entrada de datos, generar informes, y facilitar el seguimiento y análisis de los presupuestos." },
-                        new RadioButton { GroupName = "Q1", Content = "B) Un software de gestión financiera solo sirve para la contabilidad." },
-                        new RadioButton { GroupName = "Q1", Content = "C) Un software de gestión financiera no ofrece funciones útiles para la creación de presupuestos." },
-                        new RadioButton { GroupName = "Q1", Content = "D) Un software de gestión financiera es solo para grandes corporaciones." }
+                        new Label { Text = "1. ¿Cuál es la estructura básica de un formulario en HTML?" },
+                        new RadioButton { GroupName = "Q1", Content = "A) Un formulario en HTML se estructura utilizando la etiqueta <form> y puede contener controles como <input>, <textarea>, y <select>." },
+                        new RadioButton { GroupName = "Q1", Content = "B) Un formulario en HTML se estructura utilizando la etiqueta <div>." },
+                        new RadioButton { GroupName = "Q1", Content = "C) Un formulario en HTML no necesita una estructura definida." },
+                        new RadioButton { GroupName = "Q1", Content = "D) Un formulario en HTML se estructura solo con etiquetas <table>." }
                     }
                 }
             };
@@ -66,11 +66,11 @@ namespace FronEndProyecto.vistas.subtemas
                 {
                     Children =
                     {
-                        new Label { Text = "2. ¿Cómo se aplica el método del valor ganado en la práctica y cuáles son sus principales ventajas y desventajas?" },
-                        new RadioButton { GroupName = "Q2", Content = "A) Se aplica comparando el valor del trabajo realizado con el costo real y el presupuesto planificado. Ventajas: proporciona una visión precisa del progreso; desventajas: puede ser complejo de implementar." },
-                        new RadioButton { GroupName = "Q2", Content = "B) No se aplica en la práctica, solo en teoría." },
-                        new RadioButton { GroupName = "Q2", Content = "C) Se aplica utilizando un porcentaje fijo para todos los costos. Ventajas: es simple; desventajas: no es preciso." },
-                        new RadioButton { GroupName = "Q2", Content = "D) Se aplica solo al final del proyecto. Ventajas: es fácil de calcular; desventajas: no proporciona información en tiempo real." }
+                        new Label { Text = "2. ¿Qué tipo de inputs existen en un formulario HTML?" },
+                        new RadioButton { GroupName = "Q2", Content = "A) Solo hay un tipo de input en HTML." },
+                        new RadioButton { GroupName = "Q2", Content = "B) Existen varios tipos de inputs, como texto, número, correo electrónico, etc." },
+                        new RadioButton { GroupName = "Q2", Content = "C) Solo hay dos tipos de inputs en HTML: texto y número." },
+                        new RadioButton { GroupName = "Q2", Content = "D) No existen inputs en HTML." }
                     }
                 }
             };
@@ -84,11 +84,11 @@ namespace FronEndProyecto.vistas.subtemas
                 {
                     Children =
                     {
-                        new Label { Text = "3. ¿Qué es un análisis de brechas y cómo se realiza en el contexto de la presupuestación de proyectos?" },
-                        new RadioButton { GroupName = "Q3", Content = "A) Es el proceso de comparar los costos planificados con los reales para identificar desviaciones y ajustar el presupuesto en consecuencia." },
-                        new RadioButton { GroupName = "Q3", Content = "B) Es el proceso de aumentar el presupuesto del proyecto." },
-                        new RadioButton { GroupName = "Q3", Content = "C) Es irrelevante para la presupuestación de proyectos." },
-                        new RadioButton { GroupName = "Q3", Content = "D) Es solo un ejercicio teórico sin aplicación práctica." }
+                        new Label { Text = "3. ¿Cuál es la importancia de la validación en un formulario HTML?" },
+                        new RadioButton { GroupName = "Q3", Content = "A) La validación en un formulario HTML ayuda a asegurar que los datos ingresados sean válidos antes de enviar el formulario." },
+                        new RadioButton { GroupName = "Q3", Content = "B) La validación en un formulario HTML no es importante." },
+                        new RadioButton { GroupName = "Q3", Content = "C) La validación en un formulario HTML es importante solo en algunos casos." },
+                        new RadioButton { GroupName = "Q3", Content = "D) La validación en un formulario HTML se realiza solo en el servidor." }
                     }
                 }
             };
@@ -102,11 +102,11 @@ namespace FronEndProyecto.vistas.subtemas
                 {
                     Children =
                     {
-                        new Label { Text = "4. ¿Por qué es importante la presupuestación basada en actividades y cómo se implementa en un proyecto?" },
-                        new RadioButton { GroupName = "Q4", Content = "A) No es importante para la presupuestación de proyectos." },
-                        new RadioButton { GroupName = "Q4", Content = "B) Es importante porque asigna costos a actividades específicas, proporcionando una mayor precisión en el control de costos. Se implementa identificando actividades y asignando costos a cada una." },
-                        new RadioButton { GroupName = "Q4", Content = "C) Es importante solo para proyectos grandes." },
-                        new RadioButton { GroupName = "Q4", Content = "D) Se implementa aumentando el presupuesto total del proyecto." }
+                        new Label { Text = "4. ¿Cómo se envía y procesa un formulario en HTML?" },
+                        new RadioButton { GroupName = "Q4", Content = "A) Un formulario en HTML se envía a través de la etiqueta <form> y se procesa en el servidor, donde se maneja la captura y validación de datos." },
+                        new RadioButton { GroupName = "Q4", Content = "B) Un formulario en HTML no se puede enviar." },
+                        new RadioButton { GroupName = "Q4", Content = "C) Un formulario en HTML se envía usando JavaScript." },
+                        new RadioButton { GroupName = "Q4", Content = "D) Un formulario en HTML se envía solo con el botón 'Enviar' y no necesita procesamiento." }
                     }
                 }
             };
@@ -138,10 +138,10 @@ namespace FronEndProyecto.vistas.subtemas
         {
             int score = 0;
             // Verificar respuestas
-            if (GetSelectedAnswer("Q1") == "A) Un software de gestión financiera puede automatizar la entrada de datos, generar informes, y facilitar el seguimiento y análisis de los presupuestos.") score++;
-            if (GetSelectedAnswer("Q2") == "A) Se aplica comparando el valor del trabajo realizado con el costo real y el presupuesto planificado. Ventajas: proporciona una visión precisa del progreso; desventajas: puede ser complejo de implementar.") score++;
-            if (GetSelectedAnswer("Q3") == "A) Es el proceso de comparar los costos planificados con los reales para identificar desviaciones y ajustar el presupuesto en consecuencia.") score++;
-            if (GetSelectedAnswer("Q4") == "B) Es importante porque asigna costos a actividades específicas, proporcionando una mayor precisión en el control de costos. Se implementa identificando actividades y asignando costos a cada una.") score++;
+            if (GetSelectedAnswer("Q1") == "A) Un formulario en HTML se estructura utilizando la etiqueta <form> y puede contener controles como <input>, <textarea>, y <select>.") score++;
+            if (GetSelectedAnswer("Q2") == "B) Existen varios tipos de inputs, como texto, número, correo electrónico, etc.") score++;
+            if (GetSelectedAnswer("Q3") == "A) La validación en un formulario HTML ayuda a asegurar que los datos ingresados sean válidos antes de enviar el formulario.") score++;
+            if (GetSelectedAnswer("Q4") == "A) Un formulario en HTML se envía a través de la etiqueta <form> y se procesa en el servidor, donde se maneja la captura y validación de datos.") score++;
 
             if (score == 4)
             {
