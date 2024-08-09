@@ -4,8 +4,8 @@
              x:Class="FronEndProyecto.vistas.SectionsPage"
              BackgroundImageSource="https://i.pinimg.com/564x/14/67/4e/14674e94edd993f01d7580417e401b1e.jpg">
     <ContentPage.Content>
+
         <StackLayout Padding="20" Spacing="20">
-            <!-- Título de la página -->
             <Label 
                 Text="Bienvenido!"
                 x:Name="lblInicial"
@@ -28,11 +28,8 @@
             <Button Text="Cambiar de cuenta" Clicked="cambiarCuenta" HorizontalOptions="Center"/>
             <Button Text="ir al dashboard" Clicked="irDashboard" HorizontalOptions="Center"/>
 
-            <!-- Contenedor para las secciones -->
             <StackLayout Spacing="20">
-                <!-- Fila 1 -->
                 <StackLayout Orientation="Horizontal" Spacing="20">
-                    <!-- Sección 1 -->
                     <Frame Padding="15"
                            HasShadow="True"
                            BackgroundColor="White"
@@ -52,7 +49,6 @@
                         </Frame.GestureRecognizers>
                     </Frame>
 
-                    <!-- Sección 2 -->
                     <Frame Padding="15"
                            HasShadow="True"
                            BackgroundColor="White"
@@ -73,9 +69,7 @@
                     </Frame>
                 </StackLayout>
 
-                <!-- Fila 2 -->
                 <StackLayout Orientation="Horizontal" Spacing="20">
-                    <!-- Sección 3 -->
                     <Frame Padding="15"
                            HasShadow="True"
                            BackgroundColor="White"
@@ -95,7 +89,6 @@
                         </Frame.GestureRecognizers>
                     </Frame>
 
-                    <!-- Sección 4 -->
                     <Frame Padding="15"
                            HasShadow="True"
                            BackgroundColor="White"
@@ -114,8 +107,21 @@
                             <TapGestureRecognizer Tapped="seccion4" />
                         </Frame.GestureRecognizers>
                     </Frame>
+                    
                 </StackLayout>
             </StackLayout>
+            
+            <Grid VerticalOptions="End" BackgroundColor="LightGray" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="registrarButton" Text="Registrar" Grid.Column="0" />
+                <Button x:Name="dashboardButton" Text="Dashboard" Grid.Column="1" />
+                <Button x:Name="sectionsButton" Text="Sections" Grid.Column="2" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>  

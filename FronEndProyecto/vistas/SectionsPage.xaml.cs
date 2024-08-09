@@ -1,4 +1,5 @@
-﻿using FronEndProyecto.vistas.secciones;
+﻿using FronEndProyecto.vistas.config;
+using FronEndProyecto.vistas.secciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,15 +16,11 @@ namespace FronEndProyecto.vistas
         public SectionsPage()
         {
             InitializeComponent();
-
-
+            registrarButton.Clicked += OnRegistrarButtonClicked;
+            dashboardButton.Clicked += OnDashboardButtonClicked;
+            sectionsButton.Clicked += OnSectionsButtonClicked;
         }
-        protected override void OnAppearing()
-        {
-            // Lógica para actualizar la vista
-            lblProgreso.Text = $"Tu progreso es {Preferences.Get("progreso", string.Empty)}!";
-            lblInicial.Text = $"Bienvenido {Preferences.Get("nombre", string.Empty)}!";
-        }
+
 
         private async void seccion1(object sender, EventArgs e)
         {
@@ -48,6 +45,20 @@ namespace FronEndProyecto.vistas
             DisplayAlert($"Seccin 4", $"Descripción de la sección 4", "Entrar", "Cancelar");
             await Navigation.PushAsync(new seccionCuatro());
         }
+        private async void OnRegistrarButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new registrar()); // Asegúrate de que registrar exista
+        }
+
+        private async void OnDashboardButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DashboarOne()); // Esto recarga la página actual
+        }
+
+        private async void OnSectionsButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SectionsPage()); // Asegúrate de que SectionsPage exista
+        }
 
         private void cambiarCuenta(object sender, EventArgs e)
         {
@@ -55,7 +66,8 @@ namespace FronEndProyecto.vistas
         }
         private void irDashboard(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new dashboard2());
+            Navigation.PushAsync(new DashboarOne());
         }
+
     }
 }
