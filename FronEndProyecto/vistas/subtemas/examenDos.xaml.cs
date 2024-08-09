@@ -29,33 +29,33 @@ namespace FronEndProyecto.vistas.subtemas
         {
             questionGrids = new Grid[]
             {
-                CreateQuestionGrid("Pregunta 1: ¿Cuál es la importancia del análisis de costos en la planificación y ejecución de un proyecto?", "Q1",
+                CreateQuestionGrid("Pregunta 1: ¿Cuál es la función del atributo 'color' en CSS?", "Q1",
                     new[] {
-                        "A) El análisis de costos no tiene importancia en la planificación y ejecución de un proyecto.",
-                        "B) El análisis de costos permite identificar, estimar y controlar los costos asociados, asegurando que el proyecto se mantenga dentro del presupuesto.",
-                        "C) El análisis de costos solo es importante para proyectos a corto plazo.",
-                        "D) El análisis de costos se realiza solo una vez al inicio del proyecto y luego se ignora."
+                        "A) Cambiar el color de fondo de un elemento.",
+                        "B) Cambiar el color del texto de un elemento.",
+                        "C) Cambiar el color del borde de un elemento.",
+                        "D) Cambiar el color de todos los elementos en la página."
                     }),
-                CreateQuestionGrid("Pregunta 2: ¿Cómo se puede utilizar el método del valor ganado para evaluar el desempeño financiero de un proyecto?", "Q2",
+                CreateQuestionGrid("Pregunta 2: ¿Cómo se aplica una clase en CSS a un elemento HTML?", "Q2",
                     new[] {
-                        "A) Comparando el valor del trabajo realizado con el costo real y el presupuesto planificado para medir el progreso y el desempeño.",
-                        "B) El método del valor ganado no se puede utilizar para evaluar el desempeño financiero de un proyecto.",
-                        "C) Aplicando un porcentaje fijo de costos indirectos a los costos directos.",
-                        "D) Utilizando solo el costo planificado sin considerar el trabajo realizado."
+                        "A) Usando el símbolo '.' seguido del nombre de la clase en el archivo CSS.",
+                        "B) Usando el símbolo '#' seguido del nombre de la clase en el archivo CSS.",
+                        "C) Usando el símbolo '@' seguido del nombre de la clase en el archivo CSS.",
+                        "D) Usando el símbolo '!' seguido del nombre de la clase en el archivo CSS."
                     }),
-                CreateQuestionGrid("Pregunta 3: Explique el concepto de control de costos y cómo se puede aplicar en un proyecto de desarrollo de software.", "Q3",
+                CreateQuestionGrid("Pregunta 3: ¿Qué propiedad de CSS se utiliza para cambiar el tamaño del texto?", "Q3",
                     new[] {
-                        "A) El control de costos no es aplicable en proyectos de desarrollo de software.",
-                        "B) El control de costos implica monitorear y gestionar los gastos del proyecto para asegurarse de que no excedan el presupuesto asignado.",
-                        "C) El control de costos significa reducir el presupuesto total del proyecto a la mitad.",
-                        "D) El control de costos se realiza solo al final del proyecto."
+                        "A) font-style",
+                        "B) font-weight",
+                        "C) font-size",
+                        "D) font-family"
                     }),
-                CreateQuestionGrid("Pregunta 4: ¿Qué es un análisis de brechas y cómo puede ayudar a ajustar el presupuesto de un proyecto?", "Q4",
+                CreateQuestionGrid("Pregunta 4: ¿Cuál es la diferencia entre 'margin' y 'padding' en CSS?", "Q4",
                     new[] {
-                        "A) Un análisis de brechas es una herramienta para aumentar los costos de un proyecto.",
-                        "B) Un análisis de brechas identifica las diferencias entre los costos planificados y reales, ayudando a ajustar el presupuesto y mejorar la precisión de futuras estimaciones.",
-                        "C) Un análisis de brechas solo se utiliza después de que el proyecto ha finalizado.",
-                        "D) Un análisis de brechas es irrelevante para la presupuestación de proyectos."
+                        "A) Margin se refiere al espacio dentro de un elemento, mientras que Padding se refiere al espacio fuera de un elemento.",
+                        "B) Margin se refiere al espacio fuera de un elemento, mientras que Padding se refiere al espacio dentro de un elemento.",
+                        "C) Margin y Padding son lo mismo en CSS.",
+                        "D) Margin se usa para el texto y Padding para las imágenes."
                     })
             };
         }
@@ -143,10 +143,10 @@ namespace FronEndProyecto.vistas.subtemas
 
             // Comprobar respuestas
             int score = 0;
-            if (q1 == "B) El análisis de costos permite identificar, estimar y controlar los costos asociados, asegurando que el proyecto se mantenga dentro del presupuesto.") score++;
-            if (q2 == "A) Comparando el valor del trabajo realizado con el costo real y el presupuesto planificado para medir el progreso y el desempeño.") score++;
-            if (q3 == "B) El control de costos implica monitorear y gestionar los gastos del proyecto para asegurarse de que no excedan el presupuesto asignado.") score++;
-            if (q4 == "B) Un análisis de brechas identifica las diferencias entre los costos planificados y reales, ayudando a ajustar el presupuesto y mejorar la precisión de futuras estimaciones.") score++;
+            if (q1 == "B) Cambiar el color del texto de un elemento.") score++;
+            if (q2 == "A) Usando el símbolo '.' seguido del nombre de la clase en el archivo CSS.") score++;
+            if (q3 == "C) font-size") score++;
+            if (q4 == "B) Margin se refiere al espacio fuera de un elemento, mientras que Padding se refiere al espacio dentro de un elemento.") score++;
 
             if (score == 4)
             {
