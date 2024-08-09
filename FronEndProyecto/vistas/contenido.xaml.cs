@@ -29,7 +29,9 @@ namespace FronEndProyecto.vistas
             {
                 Orientation = StackOrientation.Vertical,
                 Padding = new Thickness(10),
-                Spacing = 10
+                Spacing = 10,
+                BackgroundColor = Color.Gray
+
             };
 
             _mylabel = new Label { Text = "Llamando a la API del servidor ..." };
@@ -89,7 +91,8 @@ namespace FronEndProyecto.vistas
                         var conceptoLabel = new Label
                         {
                             Text = $"Concepto: {subtema.Concepto}",
-                            FontSize = 16
+                            FontSize = 16,
+                            TextColor = Color.White
                         };
                         _stackLayout.Children.Add(conceptoLabel);
 
@@ -97,7 +100,9 @@ namespace FronEndProyecto.vistas
                         var ejemploLabel = new Label
                         {
                             Text = $"Ejemplo: {subtema.Ejemplo}",
-                            FontSize = 16
+                            FontSize = 16,
+                            TextColor = Color.White
+
                         };
                         _stackLayout.Children.Add(ejemploLabel);
 
