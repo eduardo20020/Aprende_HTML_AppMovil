@@ -48,7 +48,7 @@ namespace FronEndProyecto.vistas
         {
             try
             {
-                string url = "https://apibrandon.eastus.cloudapp.azure.com/api/secciones.php";
+                string url = "https://apibrandon.eastus.cloudapp.azure.com/api/html.php";
                 HttpResponseMessage response = await client.GetAsync(url);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
