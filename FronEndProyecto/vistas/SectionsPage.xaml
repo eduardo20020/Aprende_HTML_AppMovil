@@ -25,8 +25,6 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Margin="0,30,0,20" />
-            <Button Text="Cambiar de cuenta" Clicked="cambiarCuenta" HorizontalOptions="Center"/>
-            <Button Text="ir a las lecciones" Clicked="irDashboard" HorizontalOptions="Center"/>
 
             <StackLayout Spacing="20">
                 <StackLayout Orientation="Horizontal" Spacing="20">
@@ -111,14 +109,18 @@
                 </StackLayout>
             </StackLayout>
             
-            <Grid VerticalOptions="End" BackgroundColor="LightGray" Padding="10">
+            <Grid VerticalOptions="End" BackgroundColor="LightGray" Margin="10,50,10,10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="registrarButton" Text="Registrar" Grid.Column="0" />
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button x:Name="registrarButton" Text="Cambiar cuenta" Grid.Column="0" HeightRequest="60" />
                 <Button x:Name="dashboardButton" Text="Lecciones" Grid.Column="1" />
                 <Button x:Name="sectionsButton" Text="Examenes" Grid.Column="2" />
             </Grid>
