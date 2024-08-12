@@ -62,7 +62,7 @@ namespace FronEndProyecto.vistas
 
         private async void OnDashboardButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new contenido()); // Esto recarga la página actual
+            await Navigation.PushAsync(new getLecciones()); // Esto recarga la página actual
         }
 
         private async void OnSectionsButtonClicked(object sender, EventArgs e)
@@ -74,10 +74,11 @@ namespace FronEndProyecto.vistas
         {
             Navigation.PushAsync(new login());
         }
-        private void irDashboard(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new contenido());
-        }
 
+
+        private void irSecciones(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new getLecciones());
+        }
     }
 }
